@@ -19,10 +19,9 @@ public class StepTests
         Equipment myEquipment = new Equipment("batidora", 80.0);
         Step myStep = new Step(myProduct, 2.0, myEquipment, 2);
 
-        double expected = 55.0 * 2.0 + 80.0 * 2;
+        double expected = 270;
         double myResult = myStep.GetStepCost();
 
         Assert.That(myResult, Is.EqualTo(expected));
     }
-
 }

@@ -14,7 +14,8 @@ public class ConsolePrinterTests
     [Test]
     public void NullRecipe()
     {
-        Recipe recipe = new Recipe();
+        Recipe? recipe = new Recipe();
+        recipe = null;
         ConsolePrinter consolePrinter = new ConsolePrinter();
         Assert.Catch<Exception>(() => consolePrinter.PrintRecipe(recipe));
     }

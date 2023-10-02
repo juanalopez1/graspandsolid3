@@ -26,7 +26,7 @@ public class RecipeTests
         myRecipe.AddStep(myStep);
         myRecipe.AddStep(myStep2);
 
-        double expected = 55.0 * 2.0 + 80.0 * 2 + 23.0 * 1.0 + 0 * 0;
+        double expected = 293;
         double myResult = myRecipe.GetProductionCost();
 
         Assert.That(myResult, Is.EqualTo(expected));
